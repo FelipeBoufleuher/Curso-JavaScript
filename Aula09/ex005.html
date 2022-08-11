@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.788);
+            color: white;
+            font: normal 18pt Times New Roman;
+        }
+    </style>
+</head>
+<body>
+    <h1> Iniciando estudos de DOM </h1>
+    <p> 
+        <strong> Aqui vai o resultado </strong> 
+    </p>
+    <p> Aprendendo a usar o <strong> DOM </strong> !! </p>
+    <div id = "sanduiche" > Essa é a div numero 1 </div> 
+    <div class = "cachorro"> Essa é a div numero 2 </div>
+    <script>
+        var p1 = window.document.getElementsByTagName("p")[1]
+        p1.style.color = "green"
+        // window.document.write(p1.innerText)
+
+        var corpo = window.document.body
+        corpo.style.background = "grey"
+
+        var p1 = document.getElementById('sanduiche').
+        style.background = "red"
+        // document.write(p1.innerText) // copia a formatação do html junto
+        
+        var d2 = window.document.querySelector('div.cachorro') // # para id, . para classe
+        d2.style.color = "blue"
+    </script>
+</body>
+</html>
