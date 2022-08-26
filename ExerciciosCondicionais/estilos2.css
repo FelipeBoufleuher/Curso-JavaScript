@@ -1,0 +1,101 @@
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    /*to make the height and width responsive*/
+    width: 40vw;
+    background: url(clock.png) no-repeat;
+    background-position: center center;
+    /*setting our background image*/
+    background-size: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    
+}
+
+#dot {
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hour,
+#minute {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+    transform: translate(-50%, -100%);
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+    
+
+#second {
+    position: absolute;
+    background: red;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transform-origin: bottom;
+    z-index: 2;
+}
+  
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.75%;
+}
+  
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19.05%;
+    left: 48.9%;
+}
+  
+#second {
+    width: 1%;
+    height: 30%;
+    top: 19%;
+    left: 49.27%;
+}
+
+#msg {
+    text-align: center;
+    font: normal 20px arial;
+}
+
+body {
+    background: rgb(15, 164, 250);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.705);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgb(50, 84, 194);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font: italic 12pt Arial;
+}
